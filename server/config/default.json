@@ -1,0 +1,19 @@
+{
+  "db": {
+    "postgres": {
+      "uri": "postgres://rqgkibxe:3m7V4YLDEnL7c-mgsb8SZ-JoE3cM6uTF@balarama.db.elephantsql.com:5432/rqgkibxe",
+      "options": {},
+      "baseURL": "",
+      "tempPath": "~/temp/"
+    },
+    "redis": {
+      "uri": "redis://redis-18848.c55.eu-central-1-1.ec2.cloud.redislabs.com:18848",
+      "options": {},
+      "password": "2ehZvIVjOS4jG8Ag3sAvCmKtgqeCzKRA"
+    }
+  },
+  "jwt": {
+    "secret": "secret",
+    "expiresIn": 86400
+  }
+}
