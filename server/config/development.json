@@ -1,19 +1,19 @@
 {
   "server": {
     "host": "127.0.0.1",
-    "port": 3000,
+    "port": 2000,
     "baseURL": "",
     "tempPath": "~/temp/"
   },
   "db": {
     "postgres": {
-      "uri": "postgres://auser:rqgkibxe@127.0.0.1:5432/anami",
+      "uri": "",
       "options": {}
     },
     "redis": {
-      "uri": "redis://localhost:6379",
+      "uri": "",
       "options": {},
-      "password": "2ehZvIVjOS4jG8Ag3sAvCmKtgqeCzKRA"
+      "password": ""
     }
   }
 }
