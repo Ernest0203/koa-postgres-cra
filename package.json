@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "server-install": "(cd ./server && npm install)",
+    "client-install": "(cd ./client && npm install)",
+    "install-all": "(npm install && concurrently \"npm run server-install\" \"npm run client-install\")",
     "server": "npm run dev --prefix server",
     "client": "npm run start --prefix client",
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
-    "install-all": "concurrently \"npm install\" \"npm install --prefix server\" \"npm install --prefix client\""
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -14,7 +16,6 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/Ernest0203/koa-postgres-cra#readme",
   "dependencies": {
     "concurrently": "^5.1.0"
   }
